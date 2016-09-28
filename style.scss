@@ -1,0 +1,136 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:700,500,900,400,300,100);
+@import url(https://fonts.googleapis.com/css?family=Fjalla+One);
+/*Variable defs*/
+$c-rr:#ff183b;
+$c-white:#fff;
+
+/*Main*/
+html,body{height:100%;font-family: 'Roboto', sans-serif}
+body{
+	
+	font-size:16px;
+	height:100%;
+}
+.bg{height:100%}
+.wrapper{
+	height:100%;
+	text-align:center;
+	h1{
+		position:relative;
+		top:49%;
+		margin:0;
+		transform:translateY(-50%);
+		text-align:center;
+		color:#cacaca;
+		padding:1rem 0.25rem;
+		border-top:2px solid #cacaca;
+		border-bottom:2px solid #cacaca;
+		display:inline-block;
+		font-size:3rem;
+		font-size:5.5vw;
+		font-weight:100;
+	}
+}
+/*Elements*/
+.hamburger {
+  position: fixed;
+  z-index: 101;
+	display:block;
+  top: 1rem;right: 1rem;
+  height: 4rem;
+  width: 4rem;
+	border:2px solid #cacaca;
+}
+.menu{top:50%;transform:translateY(-50%);position:relative}
+.overlay {
+  position: fixed;
+	z-index:100;
+  background: $c-rr;
+  top: 0;left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .35s, visibility .35s;
+  overflow: hidden;
+  
+  &.visible {
+    opacity: .8;
+    visibility: visible;
+   	animation: perspective 0.5s cubic-bezier(.58,.27,.81,.57) forwards;
+
+    li {
+      animation: fadeMoveFromTop 0.5s cubic-bezier(.58,.27,.81,.57) forwards;
+      animation-delay: 0s;
+			transform-origin:bottom;
+			margin:0 8px;
+			margin:0 1vw;
+			&:nth-of-type(2) {animation-delay: 0.1s;
+				a{animation-delay: 0.1s}
+			}
+			&:nth-of-type(3) {animation-delay: 0.2s;
+				a{animation-delay: 0.2s}
+			}
+			&:nth-of-type(4) {animation-delay: 0.3s;
+				a{animation-delay: 0.3s}
+			}
+			&:nth-of-type(5) {animation-delay: 0.4s;
+				a{animation-delay: 0.4s}
+			}
+			&:nth-of-type(6) {animation-delay: 0.5s;
+				a{animation-delay: 0.5s}
+			}
+			
+			a{
+					animation: perspectiveA 0.5s cubic-bezier(.58,.27,.81,.57) forwards;
+					transform-origin:top;
+			}
+    }
+  }
+	@keyframes fadeMoveFromTop {
+		0% {opacity:0;bottom:20px}
+		75%{opacity:1;bottom:0}
+		100% {bottom:0;opacity:1}
+	}
+	@keyframes perspective {
+		0% {transform:rotate3d(0,1,0,90deg)}
+		100% {transform:rotate3d(0,1,0,0deg)}
+	}
+	@keyframes perspectiveA {
+		0% {transform:rotate3d(1,0,0,90deg)}
+		100% {transform:rotate3d(1,0,0,0deg)}
+	}
+  nav {
+    position: relative;
+    height: 100%;
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+  }
+  ul {
+    margin: 0 auto;
+    position: relative;
+    height: 100%; 
+		text-align:center;
+		padding:0;
+    
+    li {
+      display: inline-block;
+      position: relative;
+      opacity: 0;
+			margin-right:-4px;
+      
+      a {
+				transform:rotate3d(1,0,0,90deg);
+        position: relative;
+        display: block;
+				font-weight:100;
+        text-decoration: none;
+        color: $c-white;
+				font-size:2.5rem;
+				font-size:4vw;
+        overflow: hidden;
+      }
+    }
+  }
+}
