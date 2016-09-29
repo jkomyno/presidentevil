@@ -5,7 +5,7 @@
 		<meta http-equiv="x-ua-compatible" content="ie=edge">
 		<title>Alberto Schiabel | jkomyno</title>
 		<meta name="description" content="">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 		<link rel="apple-touch-icon" href="apple-touch-icon.png">
 		<!-- Place favicon.ico in the root directory -->
@@ -20,7 +20,7 @@
 			<![endif]-->
 
 
-		<section class="bg">
+		<section>
 			<div id="menu-toggle" class="hamburger">
 				<div id="hamburger">
 					<span></span>
@@ -38,24 +38,26 @@
 						<ul>
 							<li><a href="#">Album</a></li>
 							<li><a href="#">Apparel</a></li>
-							<li><a href="#">Contact</a></li>
+							<li><a href="mailto:qualsiasinomenonsiagiainuso@gmail.com">Contact</a></li>
 						</ul>
 					</div>
 				</nav>
 			</div>
 			<div class="wrapper">
 				<div class="image-block">
-					<img src="https://raw.githubusercontent.com/jkomyno/presidentevil/master/img/logo.png" class="img-responsive" />
+					<img class="img-responsive" src="https://raw.githubusercontent.com/jkomyno/presidentevil/master/img/logo.png"/>
 				</div>
+
+				<p>Lorem ipsum dolorem sit amet</p>
 
 				<div class="swiper-container">
 					<div class="swiper-wrapper">
 						<div class="swiper-slide">
-							<img data-src="https://dummyimage.com/600x300/000/00ffd5.png" class="swiper-lazy">
+							<img data-src="img/shirts.jpg" class="swiper-lazy">
 							<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
 						</div>
 						<div class="swiper-slide">
-							<img data-src="https://dummyimage.com/600x300/000/00ffd5.png" class="swiper-lazy">
+							<img data-src="img/shirts.jpg" class="swiper-lazy">
 							<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
 						</div>
 
@@ -91,7 +93,9 @@
 					spaceBetween: 30,
 					nextButton: '.swiper-button-next',
 					prevButton: '.swiper-button-prev',
-					lazyLoading: true
+					lazyLoading: true,
+					autoplay: 2500,
+        	autoplayDisableOnInteraction: false
 			});
 		</script>
 	</body>

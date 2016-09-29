@@ -2,21 +2,24 @@
 @import url(https://fonts.googleapis.com/css?family=Fjalla+One);
 /*Variable defs*/
 /*Main*/
-html, body {
+html {
   height: 100%;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
+  background: url(./img/bg.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
-@media (min-width: 800px) {
-  p {
-    font-size: 20px;
-  }
+body {
+  margin: 0px;
 }
-@media (min-width: 1200px) {
-  p {
-    font-size: 24px;
-  }
+
+p {
+  color: #dbdbdb;
+  font-size: 2em;
 }
 
 span {
@@ -32,11 +35,8 @@ span {
 img.img-responsive {
   max-width: 60%;
   text-align: center;
-  position: absolute;
   top: 12%;
   left: 20%;
-  border-radius: 3px;
-  box-shadow: 0 1px 2px rgba(0,0,0,0.9);
 }
 
 @media (min-width: 800px) {
@@ -53,17 +53,12 @@ img.img-responsive {
 }
 
 .swiper-container {
-    width: 600px;
-    height: 300px;
-}     
-
-.bg {
-  height: 100%;
-  background-color: green;
-}
-
-.swiper-container {
-  background-color: black;
+  display: block;
+  width: 96%;
+  height: 450px;
+  background-color: transparent;
+  border-radius: 3px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.9); 
 }
 
 .swiper-slide img {
@@ -76,7 +71,6 @@ img.img-responsive {
   -moz-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   position: absolute;
-  left: 50%;
   top: 50%;
 }
 
@@ -111,12 +105,12 @@ img.img-responsive {
   height: 4rem;
   width: 4rem;
   cursor: pointer;
-  background: rgba(255, 255, 255, 0.4);
+  background: rgba(36,102,77,0.4);
   border-radius: 5px;
   margin: 10px;
 }
 #menu-toggle:hover {
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(154,162,155,0.3);
 }
 
 .menu {
@@ -332,8 +326,38 @@ img.img-responsive {
   text-decoration: none;
   color: #fff;
   font-size: 2.5rem;
-  font-size: 4vw;
   overflow: hidden;
+}
+
+@media (min-width: 800px) {
+  .overlay ul li a {
+    font-size: 3rem;
+  }
+  p {
+    font-size: 2.3rem;
+  }
+  .swiper-container {
+    width: 65%
+  }
+  img.img-responsive {
+    left: 30%;
+    max-width: 40%;
+  }
+}
+@media (min-width: 1200px) {
+  .overlay ul li a {
+    font-size: 4rem;
+  }
+  p {
+    font-size: 2.5rem;
+  }
+  .swiper-container {
+    width: 50%
+  }
+  img.img-responsive {
+    left: 35%;
+    max-width: 30%;
+  }
 }
 
 * {
@@ -347,7 +371,7 @@ strong.typewrite span {
 
 div#menu-toggle div span {
   display: block;
-  background: #566973;
+  background: #FEFEFE;
   border-radius: 2px;
 }
 
@@ -418,26 +442,16 @@ div#menu-toggle div span {
 }
 
 footer {
+  box-sizing: content-box;
+  width: 96%;
+  margin: 0 2%;
   position: relative;
-  z-index: -2;
-  height: 300px;
-  background: none repeat scroll 0% 0% rgba(183, 34, 75, 0.95);
+  bottom: 0;
+  height: 175px;
+  background: none repeat scroll 0% 0% rgba(57,123,102,0.55);
   font-size: 12px;
   color: #CCC;
   text-align: center;
-}
-footer h1 {
-  position: fixed;
-  z-index: 1;
-  left: 50%;
-  bottom: 110px;
-  margin-left: -400px;
-  width: 800px;
-  list-style: outside none none;
-  text-align: center;
-  font-weight: bold;
-  color: #FFF;
-  font-size: 2.125rem;
 }
 
 div.menu ul li a {
