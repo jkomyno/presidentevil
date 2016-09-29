@@ -11,23 +11,26 @@
 		<!-- Place favicon.ico in the root directory -->
 
 		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/css/swiper.min.css">
+
 	</head>
 	<body>
 			<!--[if lte IE 9]>
 					<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
 			<![endif]-->
 
+
 		<section class="bg">
 			<div id="menu-toggle" class="hamburger">
-			  <div id="hamburger">
-			    <span></span>
-			    <span></span>
-			    <span></span>
-			  </div>
-			  <div id="cross">
-			    <span></span>
-			    <span></span>
-			  </div>
+				<div id="hamburger">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+				<div id="cross">
+					<span></span>
+					<span></span>
+				</div>
 			</div>
 			<div class="overlay">
 				<nav class="overlay-menu">
@@ -41,26 +44,55 @@
 				</nav>
 			</div>
 			<div class="wrapper">
+				<div class="image-block">
+					<img src="https://raw.githubusercontent.com/jkomyno/presidentevil/master/img/logo.png" class="img-responsive" />
+				</div>
 
-				<img src="img/logo.png" class="img-responsive"></img>
-  
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<img data-src="https://dummyimage.com/600x300/000/00ffd5.png" class="swiper-lazy">
+							<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+						</div>
+						<div class="swiper-slide">
+							<img data-src="https://dummyimage.com/600x300/000/00ffd5.png" class="swiper-lazy">
+							<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+						</div>
+
+						<div class="swiper-button-prev"></div>
+						<div class="swiper-button-next"></div>
+
+					</div>
+
+				</div>
 			</div>
 		</section>
 		<footer>
 			<div class="social-buttons">
-				<a href="https://facebook.com/jkomyno" class="social-button facebook">
+				<a href="https://it-it.facebook.com/PresidentEvil.music/" class="social-button facebook">
 					<i class="fa fa-facebook"></i>
 				</a>
-				<a href="https://twitter.com/jkomyno" class="social-button twitter">
+				<a href="https://twitter.com/_President_Evil" class="social-button twitter">
 					<i class="fa fa-twitter"></i>
 				</a>
-				<a href="mailto:alberto.schiabel@gmail.com" class="social-button google">
+				<a href="mailto:qualsiasinomenonsiagiainuso@gmail.com" class="social-button google">
 					<i class="fa fa-google"></i>
 				</a>
 			</div>
 		</footer>
 		<script src="https://use.fontawesome.com/8fd09c8836.js"></script>
 		<script src="index.js"></script>
-		<script src="typewriter.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.min.js"></script>
+
+		<script>
+			var swiper = new Swiper('.swiper-container', {
+					pagination: '.swiper-pagination',
+					paginationClickable: true,
+					spaceBetween: 30,
+					nextButton: '.swiper-button-next',
+					prevButton: '.swiper-button-prev',
+					lazyLoading: true
+			});
+		</script>
 	</body>
 </html>
