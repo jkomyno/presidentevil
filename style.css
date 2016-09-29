@@ -55,10 +55,9 @@ img.img-responsive {
 .swiper-container {
   display: block;
   width: 96%;
-  height: 450px;
+  height: 350px;
   background-color: transparent;
-  border-radius: 3px;
-  box-shadow: 0 1px 2px rgba(0,0,0,0.9); 
+  margin-bottom: 25px !important;
 }
 
 .swiper-slide img {
@@ -337,7 +336,8 @@ img.img-responsive {
     font-size: 2.3rem;
   }
   .swiper-container {
-    width: 65%
+    width: 65%;
+    height: 400px;
   }
   img.img-responsive {
     left: 30%;
@@ -352,7 +352,8 @@ img.img-responsive {
     font-size: 2.5rem;
   }
   .swiper-container {
-    width: 50%
+    width: 50%;
+    height: 500px;
   }
   img.img-responsive {
     left: 35%;
