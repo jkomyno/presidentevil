@@ -3,7 +3,7 @@
 /*Main*/
 
 * {
-  transition: .25s ease-in-out;
+  transition: .35s ease-in-out;
   margin: 0;
   padding: 0;
   border: 0;
@@ -40,6 +40,9 @@ html {
   height: 100%;
   z-index: 9999;
   background: #000;
+  position: fixed;
+  left: 0px;
+  top: 0px;
 }
 
 .eye{
@@ -123,7 +126,6 @@ html {
    margin: 0 auto;
   bottom: 10px;
   -webkit-font-smoothing: antialiased;
-  font-family: 'Open Sans', sans-serif;
   font-size:30px;
   text-align: center;
   font-weight:400;

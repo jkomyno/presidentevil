@@ -12,12 +12,21 @@
 
 		<link rel="stylesheet" href="style.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/css/swiper.min.css">
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
 		<script>
 
 			// Wait for window load
 			$(window).load(function() {
 				// Animate loader off screen
-				$(".loader").fadeOut("slow");;
+				$(".loader").animate({
+  				opacity: "0"
+  			},500);
+
+  			window.setTimeout( function(){
+  				$(".loader").hide()
+  			}, 1200)
 			});
 		</script>
 
@@ -192,9 +201,6 @@
         	autoplayDisableOnInteraction: false
 			});
 		</script>
-
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
-<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
 
 	</body>
 </html>
