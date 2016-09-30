@@ -227,6 +227,7 @@ img.img-responsive {
           animation: perspectiveA 0.5s cubic-bezier(0.58, 0.27, 0.81, 0.57) forwards;
   -webkit-transform-origin: top;
           transform-origin: top;
+  font-weight: 300;
 }
 @-webkit-keyframes fadeMoveFromTop {
   0% {
