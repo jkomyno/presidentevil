@@ -12,12 +12,33 @@
 
 		<link rel="stylesheet" href="style.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/css/swiper.min.css">
+		<script>
+
+			// Wait for window load
+			$(window).load(function() {
+				// Animate loader off screen
+				$(".loader").fadeOut("slow");;
+			});
+		</script>
 
 	</head>
 	<body>
 			<!--[if lte IE 9]>
 					<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
 			<![endif]-->
+
+
+		<div class="loader">
+			<div class="circ">
+			  <div class="hands"></div>
+			  <div class="body"></div>
+			  <div class="head">
+			    <div class="eye"></div>
+			  </div>
+			</div>
+
+			<div class="load">Our Dep is watching you</div>
+		</div>
 
 
 		<section>
@@ -171,5 +192,9 @@
         	autoplayDisableOnInteraction: false
 			});
 		</script>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+
 	</body>
 </html>
