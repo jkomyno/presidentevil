@@ -50,6 +50,7 @@ span {
   width: 100%;
   position: relative;
   height: 75%;
+  margin-top: 10px;
 }
 
 img.img-responsive {
@@ -59,10 +60,22 @@ img.img-responsive {
   left: 20%;
 }
 
+.swiper-container {
+  display: block;
+  width: 96%;
+  height: 350px;
+  margin-top: 0 !important;
+  background-color: transparent;
+  margin-bottom: 25px !important;
+}
+
 @media (min-width: 800px) {
   img.img-responsive {
     left: 30%;
     max-width: 40%;
+  }
+  .swiper-container {
+    margin-top: 30px !important;
   }
 }
 @media (min-width: 1200px) {
@@ -70,15 +83,9 @@ img.img-responsive {
     left: 35%;
     max-width: 30%;
   }
-}
-
-.swiper-container {
-  display: block;
-  width: 96%;
-  height: 350px;
-  margin-top: 48px !important;
-  background-color: transparent;
-  margin-bottom: 25px !important;
+  .swiper-container {
+    margin-top: 48px !important;
+  }
 }
 
 .swiper-slide img {
@@ -118,7 +125,7 @@ img.img-responsive {
 .pricing-container {
   width: 90%;
   max-width: 1170px;
-  margin: 6em auto;
+  margin: 0em auto;
 }
 
 .pricing-switcher {
@@ -456,6 +463,87 @@ img.img-responsive {
     color: #173d50;
 }
 
+/* social */
+.login-box {
+  background: rgba(232, 232, 232, 0.92);
+  padding: 20px;
+  width: 65%;
+  margin: 30px auto 70px;
+  text-align: center;
+  letter-spacing: 1px;
+  position: relative;
+}
+
+.social-login {
+  background-position: 25px 0px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    display: inline-block;
+    height: 50px;
+  line-height: 50px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    vertical-align: middle;
+    width: 100%;
+  border-radius: 3px;
+    margin: 10px auto;
+    outline: rgb(255, 255, 255) none 0px;
+    padding-left: 20%;
+}
+
+.social-login:hover {
+  box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+@media (min-width: 800px) {
+  .login-box {
+    width: 300px;
+  }
+}
+@media (min-width: 1200px) {
+  .login-box {
+    width: 350px;
+  }
+}
+
+#facebook-connect {
+  border-color: rgb(60, 90, 154);
+  background: rgb(60, 90, 154) url('./img/facebook-white.svg') no-repeat scroll 5px 0px / 30px 50px padding-box border-box;
+    border: 1px solid rgb(60, 90, 154);
+}
+
+#facebook-connect span {
+  box-sizing: border-box;
+    color: rgb(60, 90, 154);
+    cursor: pointer;
+    position: absolute;
+    left: 40%;
+    text-transform: uppercase;
+    border: 0px none rgb(255, 255, 255);
+    outline: rgb(255, 255, 255) none 0px;
+  color: #FFF;
+}
+
+#google-connect {
+  border: 1px solid rgb(220, 74, 61);
+  border-color: rgb(220, 74, 61);
+  background: rgb(220, 74, 61) url('./img/google-plus.png') no-repeat scroll 5px 0px / 50px 50px padding-box border-box;
+}
+
+#google-connect span {
+  
+  box-sizing: border-box;
+    color: rgb(220, 74, 61);
+    cursor: pointer;
+    position: absolute;
+    left: 42%;
+    text-transform: uppercase;
+    border: 0px none rgb(220, 74, 61);
+    outline: rgb(255, 255, 255) none 0px;
+  color: #FFF;
+}
+
 /*Elements*/
 #menu-toggle {
   position: fixed;
@@ -475,7 +563,7 @@ img.img-responsive {
 }
 
 .menu {
-  top: 50%;
+  top: 42%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   position: relative;
@@ -541,8 +629,7 @@ img.img-responsive {
           animation-delay: 0s;
   -webkit-transform-origin: bottom;
           transform-origin: bottom;
-  margin: 0 8px;
-  margin: 0 1vw;
+  margin: 4vw 1vw;
 }
 .overlay.visible li:nth-of-type(2) {
   -webkit-animation-delay: 0.1s;
