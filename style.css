@@ -76,6 +76,7 @@ img.img-responsive {
   display: block;
   width: 96%;
   height: 350px;
+  margin-top: 48px !important;
   background-color: transparent;
   margin-bottom: 25px !important;
 }
